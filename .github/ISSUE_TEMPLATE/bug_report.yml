@@ -1,0 +1,104 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in RemoteGPS
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the sections below so we can reproduce and fix the issue.
+  - type: input
+    id: version
+    attributes:
+      label: App Version
+      description: Which version of RemoteGPS are you using? (Settings > About)
+      placeholder: "e.g. 1.0"
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iPhone and iOS Version
+      placeholder: "e.g. iPhone 15 Pro, iOS 26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: camera
+    attributes:
+      label: Camera
+      options:
+        - Osmo Action 4
+        - Osmo Action 5 Pro
+        - Osmo Action 6
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Camera Firmware
+      description: Found on the camera under Settings > About.
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the app is affected?
+      options:
+        - Pairing / Connection
+        - GPS Streaming / Location in Clips
+        - Record / Shutter Control
+        - Mode Switching
+        - Auto Record
+        - GPX Logging
+        - Background Operation
+        - UI / Layout
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Start the service...
+        2. Accept the pairing on the camera...
+        3. Tap record...
+        4. See error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Screen Recordings
+      description: You can drag and drop images or videos here.
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: |
+        Anything else that might help. **GPX files and clips contain your location — only attach them if you're comfortable sharing it.**
+    validations:
+      required: false
