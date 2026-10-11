@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — RemoteGPS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #e0e0e0;
+            background: #0d1117;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .subtitle {
+            color: #8b949e;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+        h2 {
+            font-size: 1.3em;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+        p { margin-bottom: 16px; }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li { margin-bottom: 6px; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #21262d;
+            color: #8b949e;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">RemoteGPS for iPhone &mdash; Last updated: October 11, 2026</p>
+
+        <div class="highlight">
+            <strong>Summary:</strong> RemoteGPS does not collect, store or transmit any personal data to us or to anyone else. Your location is sent only over Bluetooth to your own camera and, if you enable it, written to GPX files on your iPhone. The app has no servers and makes no internet connections.
+        </div>
+
+        <h2>Data Collection</h2>
+        <p>RemoteGPS does <strong>not</strong> collect any personal information. The app:</p>
+        <ul>
+            <li>Does not require an account or sign-in</li>
+            <li>Does not use analytics, crash reporting or tracking</li>
+            <li>Does not contain advertising</li>
+            <li>Does not connect to the internet</li>
+            <li>Does not access your contacts, photos, calendar or microphone</li>
+        </ul>
+
+        <h2>Location</h2>
+        <p>RemoteGPS exists to give a DJI Osmo Action camera the GPS position it cannot measure itself. While the service is running, the app reads your iPhone's location and:</p>
+        <ul>
+            <li><strong>Sends it over Bluetooth to the camera you paired</strong>, which writes it into the metadata of the videos and photos it records. Location data in those files is then part of your own footage; keep this in mind when you share clips.</li>
+            <li><strong>Optionally writes it to GPX track files on your iPhone</strong> (Settings &rarr; Save GPX Track). These files stay in the app's own storage, are visible to you in the Files app under On My iPhone &rarr; RemoteGPS, and are removed when you delete them in the app or uninstall it.</li>
+        </ul>
+        <p>Location is never sent to us or to any third party. Background location access is used only so streaming to the camera continues while your iPhone is locked during filming; it stops when you stop the service.</p>
+
+        <h2>Bluetooth</h2>
+        <p>RemoteGPS uses Bluetooth to find and connect to your camera. It remembers the identifier of the last connected camera on your iPhone so it can reconnect faster. You can clear it with Settings &rarr; Forget Paired Camera.</p>
+
+        <h2>Data Stored on Your Device</h2>
+        <ul>
+            <li>App settings (GPS push rate, Auto Record mode and thresholds, GPX logging on/off)</li>
+            <li>The identifier of the paired camera</li>
+            <li>GPX track files, if enabled</li>
+        </ul>
+        <p>All of this stays on your iPhone and is deleted when you uninstall the app.</p>
+
+        <h2>Third Parties</h2>
+        <p>RemoteGPS contains no third-party SDKs and shares no data with any service. RemoteGPS is an independent app and is not affiliated with or endorsed by DJI.</p>
+
+        <h2>Children</h2>
+        <p>RemoteGPS does not knowingly collect any information from children under 13. Because the app collects no data at all, no such information is processed.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy? Open an issue on the <a href="https://github.com/temmink/RemoteGPS/issues">RemoteGPS support page</a>.</p>
+
+        <div class="footer">
+            &copy; 2026 RemoteGPS. All rights reserved. &middot; <a href="index.html">Support</a>
+        </div>
+    </div>
+</body>
+</html>
