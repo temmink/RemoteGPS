@@ -1,0 +1,42 @@
+name: Feature Request
+description: Suggest a new feature or improvement for RemoteGPS
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Your ideas help make RemoteGPS better.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - GPS Streaming
+        - Camera Control
+        - Auto Record
+        - GPX Logging
+        - New Camera Support
+        - UI / Workflow
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      placeholder: "I often find myself wanting to..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+    validations:
+      required: false
