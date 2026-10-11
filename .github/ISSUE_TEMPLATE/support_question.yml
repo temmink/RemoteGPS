@@ -1,0 +1,36 @@
+name: Support / Question
+description: Ask a question or get help using RemoteGPS
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about RemoteGPS? We're happy to help!
+  - type: dropdown
+    id: area
+    attributes:
+      label: Topic
+      options:
+        - Getting Started / Pairing
+        - GPS in My Clips
+        - Camera Control
+        - Auto Record
+        - GPX Files
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      placeholder: "How do I..."
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Camera and App Version
+      placeholder: "e.g. Osmo Action 6, RemoteGPS 1.0"
+    validations:
+      required: false
